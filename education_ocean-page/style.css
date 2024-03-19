@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' , sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+ span{
+  color: #303ef7;
+}
+
+.heading{
+  color: #fff;
+  
+}
+
+.container h1{
+  text-align: center;
+  padding-top: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+
+.container h1::after{
+  content: '';
+  background: #303ef7;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 10px;
+}
+
+.service{
+  text-align: center;
+  padding: 2rem  0.8rem;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, backgroud0.5s;
+  
+}
+
+.link{
+  color:inherit;
+  text-decoration: none;
+}
+
+.service i{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #303ef7;
+}
+
+.service h2{
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service:hover{
+  background: #303ef7;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.service:hover i{
+  color: #fff;
+}
+
+.background-clip{
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
